@@ -11,7 +11,7 @@ public class App {
         skillPedang.bonusDamage = 5;
         pedang.skill = skillPedang;
         tongkat.skill = pedang.skill;
-        tongkat.skill.bonusDamage = 3;
+        tongkat.skill.bonusDamage = 3 ;
     
 
         System.out.println(pedang.getTotalDamage());//10+3=13
