@@ -3,10 +3,16 @@ public class Character {
     int hp;
     String Nama;
     Weapon weapon;
+    static int totalCharacters = 0;
 
     public Character(String Nama, int hp) {
         this.Nama = Nama;
         this.hp = hp;
+        totalCharacters++;
+    }
+
+    public static int getTotalCharacters() {
+        return totalCharacters;
     }
 
   
