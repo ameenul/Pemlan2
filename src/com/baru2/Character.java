@@ -1,8 +1,12 @@
+package com.baru2;
+import com.baru2.Weapon;
+
+
 public class Character {
 
-    int hp;
-     String Nama;
-    Weapon weapon;
+    private int hp;
+    protected String Nama;
+    protected Weapon weapon;
     static int totalCharacters = 0;
 
     public Character(String Nama, int hp) {
@@ -17,7 +21,7 @@ public class Character {
     }
 
   
-    void Attack( Character musuh)
+    public void Attack( Character musuh)
     {
         //System.out.println(totalCharacters);
         if(weapon == null)
@@ -27,6 +31,10 @@ public class Character {
         }
         System.out.println(Nama + " menyerang " + musuh.Nama + " dengan " + weapon.nama);
         musuh.hp -= weapon.getTotalDamage();
+    }
+
+    public int getHp() {
+        return hp;
     }
 
 
