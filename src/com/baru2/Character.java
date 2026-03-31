@@ -1,5 +1,4 @@
 package com.baru2;
-import com.baru2.Weapon;
 
 
 public class Character {
