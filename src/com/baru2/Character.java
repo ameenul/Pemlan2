@@ -5,8 +5,8 @@ import com.baru2.Weapon;
 public class Character {
 
     private int hp;
-    protected String Nama;
-    protected Weapon weapon;
+    public String Nama;
+    public Weapon weapon;
     static int totalCharacters = 0;
 
     public Character(String Nama, int hp) {
